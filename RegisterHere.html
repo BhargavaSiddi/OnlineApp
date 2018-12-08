@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>RegisterHere</title>
+    <script>
+</script>
+</head>
+<style>
+
+.table1{
+    padding-top: 30px;
+    background-color:transparent;
+}
+table {
+    border-style: ridge;
+    border-width: 3px;
+    border-color: rgb(100, 88, 206);
+    padding: 10px;
+    text-align: right;
+}
+th, td{
+    border: transparent;
+}
+#p1{
+    content: "*";
+    color: red;
+}
+.PD{
+    font-weight: bold;
+    position: absolute;
+    left: 18px;
+    top: 13px;
+    color: rgb(240, 240, 240);
+    font-size: 20px;
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 30%;
+    background-image: radial-gradient(white,blue,black);
+}
+.ED{
+    font-weight: bold;
+    position: absolute;
+    left: 18px;
+    top: 265px;
+    color: rgb(240, 240, 240);
+    font-size: 20px;
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 30%;
+    background-image: radial-gradient(white,blue,black);
+}
+.tr{
+    background-image: radial-gradient(blue,white);
+}
+form{
+    align-content: center;
+}
+body{
+    align-content: center;
+}
+</style>
+ <body>
+     <br>
+     <div>
+<form action="/action_page.php" method="post">
+    <input type="submit">
+        <label class="ED">Educational-Details</label>
+        <label class="PD">Personal-Details</label>
+ <table class="table1">
+     <tr class="tr">
+        <th>
+         <span id="p1">*</span>First Name :<input type="text" placeholder="Your Name" required>
+        </th>
+        <th>
+             Middle Name : <input type="text" placeholder="middle name(if any)">
+        </th>
+        <th>
+         <span id="p1">*</span>Last Name : <input type="text" placeholder="Surname">
+        </th>
+    </tr>
+    <tr class="tr">
+        <th>
+            <br>
+            <span class="required"></span>Date Of Birth : <input id="D_O_B" type="date" value="dateOfBirth" onkeypress="age()">
+        </th>
+        <th>
+                <br>
+                <span class="required"></span>Age : <input id="age" type="text" readonly>
+       </th>
+        <th>
+            <br>
+            <span class="required"></span>Primary E-mail : <input type="email" placeholder="abc@123.xy(option)">
+        </th>
+    </tr>
+    <tr class="tr">
+        <th>
+            <br>
+            <span class="required"></span>Phone Number1 : <input type="text" placeholder="abc@123.xy">
+        </th>
+        <th>
+            <br>
+            Phone Number2 : <input type="text" placeholder="Ex:-987654321">
+        </th>
+        <th>
+            <br>
+            Secindary E-mail : <input type="email" placeholder="abc@123.xy(option)">
+        </th>
+    </tr>
+    <tr class="tr">
+        <th>
+            <br>
+            <span class="required"></span>User Name : <input type="text">
+        </th>
+        <th>
+            <br>Password
+            <input id="password" type="password" name="pass" pattern=".{8,}" required title="PassWord length must be minimum 8 Characters">
+        </th>
+        <th>
+            <br>
+            <span class="required"></span>Confirm Password : <input type="password">
+        </th>
+    </tr>
+</table>
+</div>
+<br>
+<br>
+ <table class="table1">
+     <tr class="tr">
+        <th>
+            <span class="required"></span><input type="text">
+        </th>
+        <th>
+            <input type="text">
+        </th>
+        <th>
+            <span class="required"></span><input type="text">
+        </th>
+    </tr>
+    <tr class="tr">
+        <th>
+            <br>
+            <span class="required"></span><input type="date">
+        </th>
+        <th>
+                <br>
+                <span class="required"></span><input type="text">
+       </th>
+        <th>
+            <br>
+            <span class="required"></span><input type="email">
+        </th>
+    </tr>
+    <tr class="tr">
+        <th>
+            <br>
+            <span class="required"></span><input type="text">
+        </th>
+        <th>
+            <br>
+            <input type="text">
+        </th>
+        <th>
+            <br>
+            <input type="email">
+        </th>
+    </tr>
+    <tr class="tr">
+        <th>
+            <br>
+            <span class="required"></span><input type="text">
+        </th>
+        <th>
+            <br>
+            <span class="required"></span><input >
+        </th>
+        <th>
+            <br>
+            <span class="required"></span><input type="password">
+        </th>
+    </tr>
+</table>
+<br>
+<br>
+ <table class="table1">
+     <tr class="tr">
+        <th>
+            <span class="required"></span><input type="text">
+        </th>
+        <th>
+             <input type="text">
+        </th>
+        <th>
+            <span class="required"></span><input type="text">
+        </th>
+    </tr>
+    <tr class="tr">
+        <th>
+            <br>
+            <span class="required"></span><input type="date">
+        </th>
+        <th>
+                <br>
+                <span class="required"></span><input type="text">
+       </th>
+        <th>
+            <br>
+            <span class="required"></span><input type="email">
+        </th>
+    </tr>
+    <tr class="tr">
+        <th>
+            <br>
+            <span class="required"></span><input type="text">
+        </th>
+        <th>
+            <br>
+            <input type="text">
+        </th>
+        <th>
+            <br>
+            <input type="email">
+        </th>
+    </tr>
+    <tr class="tr">
+        <th>
+            <br>
+            <span class="required"></span><input type="text">
+        </th>
+        <th>
+            <br>
+            <span class="required"></span><input id="password" name="password" type="password" onclick="passwordEvent()">
+        </th>
+        <th>
+            <br>
+            <span class="required"></span><input type="password">
+        </th>
+    </tr>
+</table>
+
+</form>
+</body>
+</html>
